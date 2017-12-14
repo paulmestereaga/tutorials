@@ -16,7 +16,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
     {
         $setup->startSetup();
 
-        if (version_compare($context->getVersion(), '0.0.2', '')) {
+        if (version_compare($context->getVersion(), '0.0.2', '<')) {
             $setup->getConnection()->addColumn(
                 $setup->getTable('mesteru_sample_item'),
                 'description',
