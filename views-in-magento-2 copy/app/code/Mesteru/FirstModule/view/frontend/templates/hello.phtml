@@ -1,0 +1,11 @@
+
+<?php
+/** @var \Mesteru\FirstModule\Block\Hello $block */
+?>
+<ul>
+<?php foreach ($block->getItems() as $item): ?>
+	<li>
+	<?php echo $item->getName(); ?> 
+	</li>
+<?php endforeach; ?>
+</ul>
